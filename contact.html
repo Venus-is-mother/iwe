@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Say Hello, Iwé</title>
+<meta name="description" content="I design and build apps and websites like Iwé. Get in touch.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+  .wrap{ max-width:440px; margin:0 auto; padding:28px 20px 44px; text-align:center; }
+  .back{
+    display:inline-flex; align-items:center; gap:6px;
+    color:var(--ink-soft); text-decoration:none; font-weight:700; font-size:13px;
+    margin-bottom:26px;
+  }
+  .back svg{ width:14px; height:14px; }
+  .mini-owl{ position:relative; width:96px; height:100px; margin:0 auto 18px; }
+  .mini-owl .book{ position:absolute; bottom:0; left:0; width:96px; height:14px; background:var(--warm); border-radius:5px; }
+  .mini-owl .body{ position:absolute; left:50%; bottom:12px; transform:translateX(-50%); width:76px; height:70px; background:var(--primary); border-radius:46% 46% 50% 50%; }
+  .mini-owl .belly{ position:absolute; left:50%; bottom:14px; transform:translateX(-50%); width:44px; height:44px; background:var(--primary-tint); border-radius:50%; }
+  .mini-owl .ear{ position:absolute; top:8px; width:0; height:0; border-left:7px solid transparent; border-right:7px solid transparent; border-bottom:14px solid var(--primary); }
+  .mini-owl .ear.l{ left:14px; transform:rotate(-8deg); }
+  .mini-owl .ear.r{ right:14px; transform:rotate(8deg); }
+  .mini-owl .eye{ position:absolute; top:38px; width:19px; height:19px; background:#fff; border-radius:50%; box-shadow:0 2px 6px var(--shadow-soft); }
+  .mini-owl .eye.l{ left:16px; } .mini-owl .eye.r{ right:16px; }
+  .mini-owl .pupil{ position:absolute; top:5px; left:5px; width:9px; height:9px; background:var(--ink); border-radius:50%; }
+  .mini-owl .beak{ position:absolute; top:50px; left:50%; transform:translateX(-50%); width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-top:8px solid var(--warm); }
+
+  h1.hello{ font-size:27px; font-weight:700; line-height:1.25; margin:0 0 10px; color:var(--primary); }
+  .pitch{ font-size:14.5px; color:var(--ink-soft); font-weight:500; line-height:1.5; margin:0 0 28px; }
+
+  .links{ display:flex; flex-direction:column; gap:10px; text-align:left; }
+  .link-card{
+    display:flex; align-items:center; gap:12px;
+    background:var(--card); border-radius:18px; padding:13px 16px;
+    box-shadow:0 4px 12px var(--shadow-soft);
+    text-decoration:none; color:var(--ink);
+  }
+  .link-card:active{ transform:scale(0.98); }
+  .link-card .icn{ width:42px; height:42px; border-radius:12px; flex:none; display:flex; align-items:center; justify-content:center; }
+  .link-card .icn svg{ width:20px; height:20px; }
+  .link-card .txt{ min-width:0; }
+  .link-card .label{ font-size:11px; color:var(--ink-soft); font-weight:700; text-transform:uppercase; letter-spacing:0.04em; }
+  .link-card .handle{ font-size:15px; font-weight:700; margin-top:1px; font-family:var(--display); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .icn.email{ background:var(--primary); }
+  .icn.x{ background:var(--ink); }
+  .icn.tiktok{ background:var(--slang); }
+  .icn.youtube{ background:#FF5A5A; }
+
+  .badge{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:30px; padding:7px 14px; border-radius:999px;
+    background:var(--primary-tint); color:var(--primary-deep);
+    font-size:12px; font-weight:700;
+  }
+  .badge svg{ width:13px; height:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    Back to Iwé
+  </a>
+
+  <div class="mini-owl">
+    <div class="book"></div>
+    <div class="body"></div>
+    <div class="belly"></div>
+    <div class="ear l"></div><div class="ear r"></div>
+    <div class="eye l"><div class="pupil"></div></div>
+    <div class="eye r"><div class="pupil"></div></div>
+    <div class="beak"></div>
+  </div>
+
+  <h1 class="hello">Want a cute app<br>like this one?</h1>
+  <p class="pitch">I design and build apps and websites like Iwé. Reach out if you've got an idea you'd like to see made real.</p>
+
+  <div class="links">
+    <a class="link-card" href="mailto:renike.dev@gmail.com">
+      <span class="icn email"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg></span>
+      <span class="txt"><span class="label">Email</span><br><span class="handle">renike.dev@gmail.com</span></span>
+    </a>
+    <a class="link-card" href="https://x.com/DevRenike" target="_blank" rel="noopener">
+      <span class="icn x"><svg viewBox="0 0 24 24" fill="white"><path d="M4 4l7.5 8.3L4.3 20H7l5.2-5.9L17 20h3l-7.9-8.8L19.4 4h-2.7l-4.8 5.4L7 4H4z"/></svg></span>
+      <span class="txt"><span class="label">X</span><br><span class="handle">@DevRenike</span></span>
+    </a>
+    <a class="link-card" href="https://tiktok.com/@Renike.dev" target="_blank" rel="noopener">
+      <span class="icn tiktok"><svg viewBox="0 0 24 24" fill="white"><path d="M16.5 3c.4 2.2 1.9 3.7 4 3.9v3c-1.5 0-2.9-.5-4-1.4v6.6a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3.1a2.5 2.5 0 1 0 1.7 2.4V3h3z"/></svg></span>
+      <span class="txt"><span class="label">TikTok</span><br><span class="handle">@Renike.dev</span></span>
+    </a>
+    <a class="link-card" href="https://youtube.com/@DevRenike" target="_blank" rel="noopener">
+      <span class="icn youtube"><svg viewBox="0 0 24 24" fill="white"><rect x="2" y="5" width="20" height="14" rx="4" fill="none"/><path d="M10 9l6 3-6 3z"/></svg></span>
+      <span class="txt"><span class="label">YouTube</span><br><span class="handle">@DevRenike</span></span>
+    </a>
+  </div>
+
+  <div class="badge">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M6 4h9a2 2 0 0 1 2 2v14l-6.5-3.5L4 20V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    Remember to learn a new word today!
+  </div>
+
+</div>
+</body>
+</html>
